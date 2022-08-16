@@ -335,7 +335,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="55dp"
                 android:layout_marginBottom="16dp"
                 android:text="No payment have been added as favourite yet."
                 android:textAlignment="center"
@@ -345,8 +345,8 @@
                 android:id="@+id/imageView17"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="16dp"
                 app:srcCompat="@drawable/ic_baseline_favorite_24" />
         </androidx.cardview.widget.CardView>
