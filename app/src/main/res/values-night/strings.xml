@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="statement">Statement</string>
+    <string name="todo">TODO</string>
+    <string name="npr">NPR 100.12</string>
+    <string name="balance">Balance</string>
+    <string name="notifications">Notifications</string>
+    <string name="you_don_t_have_any_notification">You don\'t have any notification</string>
+    <string name="no_notification_yet">No Notification, yet.</string>
+</resources>
