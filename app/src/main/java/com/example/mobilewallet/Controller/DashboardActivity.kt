@@ -21,6 +21,7 @@ class DashboardActivity : AppCompatActivity() {
         val statement= findViewById<ImageView>(R.id.transactions)
         statement.setOnClickListener(){
             //Toast.makeText(this, "Clicked on Notifications", Toast.LENGTH_SHORT).show()
+
             val intent= Intent(this, MainActivity:: class.java)
             startActivity(intent)
         }
