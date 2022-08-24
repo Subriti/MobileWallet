@@ -81,7 +81,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                app:cardBackgroundColor="#8AC5B7">
+                app:cardBackgroundColor="#EE4B5E">
 
                 <TextView
                     android:id="@+id/textView5"
@@ -345,7 +345,7 @@
                 android:id="@+id/imageView17"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="300dp"
+                android:layout_marginStart="290dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="16dp"
                 app:srcCompat="@drawable/ic_baseline_favorite_24" />

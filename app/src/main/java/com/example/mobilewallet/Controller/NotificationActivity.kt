@@ -18,12 +18,5 @@ class NotificationActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
-        val home = findViewById<ImageView>(R.id.notifHome)
-        home.setOnClickListener {
-            //Toast.makeText(this, "Clicked on Home", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, DashboardActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
