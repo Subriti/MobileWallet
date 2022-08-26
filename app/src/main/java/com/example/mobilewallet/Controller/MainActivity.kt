@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_transaction)
 
         adapter= RecyclerAdapter(Statements().loadTransactions(), this)
         val recyclerView= findViewById<RecyclerView>(R.id.statementRecyclerView)
@@ -32,7 +32,19 @@ class MainActivity : AppCompatActivity() {
             //Toast.makeText(this, "Clicked on Notifications", Toast.LENGTH_SHORT).show()
             val intent= Intent(this, NotificationActivity:: class.java)
             startActivity(intent)
+        }
 
+        val home = findViewById<ImageView>(R.id.homePage)
+        home.setOnClickListener {
+            //Toast.makeText(this, "Clicked on Notifications", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, DashboardActivity::class.java)
+            startActivity(intent)
+        }
+
+        val scan = findViewById<ImageView>(R.id.scanAndPay)
+        scan.setOnClickListener {
+            val intent = Intent(this, ScanActivity::class.java)
+            startActivity(intent)
         }
     }
 }
