@@ -27,13 +27,6 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager= layoutManager
         recyclerView.setHasFixedSize(true)
 
-        val notif= findViewById<ImageView>(R.id.notif)
-        notif.setOnClickListener(){
-            //Toast.makeText(this, "Clicked on Notifications", Toast.LENGTH_SHORT).show()
-            val intent= Intent(this, NotificationActivity:: class.java)
-            startActivity(intent)
-        }
-
         val home = findViewById<ImageView>(R.id.homePage)
         home.setOnClickListener {
             //Toast.makeText(this, "Clicked on Notifications", Toast.LENGTH_SHORT).show()
@@ -44,6 +37,12 @@ class MainActivity : AppCompatActivity() {
         val scan = findViewById<ImageView>(R.id.scanAndPay)
         scan.setOnClickListener {
             val intent = Intent(this, ScanActivity::class.java)
+            startActivity(intent)
+        }
+
+        val scanback = findViewById<ImageView>(R.id.scan_back)
+        scanback.setOnClickListener {
+            val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
         }
     }

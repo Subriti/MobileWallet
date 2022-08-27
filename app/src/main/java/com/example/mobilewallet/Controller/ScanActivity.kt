@@ -30,12 +30,6 @@ class ScanActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scan)
 
-        val notif = findViewById<ImageView>(R.id.notif)
-        notif.setOnClickListener {
-            //Toast.makeText(this, "Clicked on Notifications", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, NotificationActivity::class.java)
-            startActivity(intent)
-        }
 
         val statement = findViewById<ImageView>(R.id.transactions)
         statement.setOnClickListener {
@@ -45,6 +39,12 @@ class ScanActivity : AppCompatActivity() {
 
         val home = findViewById<ImageView>(R.id.homePage)
         home.setOnClickListener {
+            val intent = Intent(this, DashboardActivity::class.java)
+            startActivity(intent)
+        }
+
+        val scanback = findViewById<ImageView>(R.id.scan_back)
+        scanback.setOnClickListener {
             val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
         }

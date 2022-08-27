@@ -15,7 +15,7 @@ class NotificationActivity : AppCompatActivity() {
         val back = findViewById<ImageView>(R.id.back)
         back.setOnClickListener {
             //Toast.makeText(this, "Clicked on Back", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
         }
     }

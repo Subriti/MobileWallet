@@ -30,13 +30,13 @@
                 android:foregroundTint="#FAF6F6" />
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:id="@+id/scan_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
-                app:srcCompat="@drawable/ic_baseline_people_alt_24" />
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
                 android:layout_marginTop="20dp"
-                android:text="Username"
+                android:text="Scan QR Code to Pay"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -92,20 +92,31 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="64dp"
+            app:cardBackgroundColor="#212121"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/notif"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:contentDescription="@string/todo"
-        app:layout_anchor="@+id/appbar"
-        app:layout_anchorGravity="end|center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_notifications_24" />
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="0dp"
+                android:padding="10dp"
+                android:text="ADD QR CODE FROM DEVICE"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
@@ -178,19 +189,6 @@
         android:textColor="@color/white"
         app:layout_anchor="@+id/bottomAppBar"
         app:layout_anchorGravity="bottom|center" />
-
-    <ImageView
-        android:id="@+id/search"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="40dp"
-        android:contentDescription="@string/todo"
-        app:layout_anchor="@+id/appbar"
-        app:layout_anchorGravity="end|top"
-        app:layout_constraintEnd_toStartOf="@+id/notif"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_search_24" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -12,7 +12,7 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        val notif = findViewById<ImageView>(R.id.notif)
+        val notif = findViewById<ImageView>(R.id.download)
         notif.setOnClickListener {
             //Toast.makeText(this, "Clicked on Notifications", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, NotificationActivity::class.java)
