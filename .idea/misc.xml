@@ -5,14 +5,18 @@
       <map>
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_dashboard - Copy.xml" value="0.22" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_load_money.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_notification.xml" value="0.25" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_picture_barcode.xml" value="0.18" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_scan.xml" value="0.25" />
-        <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_transaction.xml" value="0.25" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_scan_from_image.xml" value="0.25" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_transaction.xml" value="0.33" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_transactions.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/appbar.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/scan_and_pay.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/statement_item.xml" value="0.33" />
+        <entry key="..\:/Users/Subriti/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/activity_list_item.xml" value="0.25" />
       </map>
     </option>
   </component>

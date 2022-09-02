@@ -5,6 +5,8 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,6 +17,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Material3.Light.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".Controller.CardLoadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.InternetBankingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.MobileBankingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.LoadMoneyActivity"
+            android:exported="false" />
         <activity
             android:name=".Controller.ScanActivity"
             android:exported="false" />

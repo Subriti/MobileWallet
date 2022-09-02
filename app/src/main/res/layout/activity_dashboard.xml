@@ -109,7 +109,7 @@
             </androidx.cardview.widget.CardView>
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/loadMoneyBtn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="170dp"

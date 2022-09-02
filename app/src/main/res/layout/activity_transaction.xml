@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="90dp"
                 android:layout_marginTop="16dp"
-                android:text="@string/npr"
+                android:text="Rs. 1036.12"
                 android:textColor="#004D40" />
 
             <TextView
@@ -176,22 +176,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_share_24" />
 
-    <ImageView
-        android:id="@+id/scan_back"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        app:layout_anchor="@+id/appbar"
-        app:layout_anchorGravity="start|center"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:text="Transactions"
         android:textAlignment="center"

@@ -2,7 +2,7 @@
     <string name="app_name">MobileWallet</string>
     <string name="statement">Transactions</string>
     <string name="todo">TODO</string>
-    <string name="npr">NPR 1036.12</string>
+    <string name="npr">Rs. 1036.12</string>
     <string name="balance">Balance</string>
     <string name="notifications">Notifications</string>
     <string name="you_don_t_have_any_notification">You don\'t have any notification</string>

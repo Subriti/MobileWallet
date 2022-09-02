@@ -29,20 +29,11 @@
                 android:background="#090909"
                 android:foregroundTint="#FAF6F6" />
 
-            <ImageView
-                android:id="@+id/scan_back"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="8dp"
-                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
-
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="80dp"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="20dp"
                 android:text="Scan QR Code to Pay"
                 android:textAlignment="center"

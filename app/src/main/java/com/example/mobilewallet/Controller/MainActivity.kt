@@ -39,11 +39,5 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ScanActivity::class.java)
             startActivity(intent)
         }
-
-        val scanback = findViewById<ImageView>(R.id.scan_back)
-        scanback.setOnClickListener {
-            val intent = Intent(this, DashboardActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
