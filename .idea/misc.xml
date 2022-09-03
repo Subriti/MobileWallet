@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_card_loading.xml" value="0.33" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_dashboard - Copy.xml" value="0.22" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_internet_banking.xml" value="0.33" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_load_money.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_mobile_banking.xml" value="0.33" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_notification.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_picture_barcode.xml" value="0.18" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/MobileWallet/app/src/main/res/layout/activity_scan.xml" value="0.25" />

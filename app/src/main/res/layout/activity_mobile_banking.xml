@@ -1,9 +1,444 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Controller.MobileBankingActivity">
+    android:background="#090909">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ScannerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="63dp"
+        android:background="#212121"
+        tools:context=".Controller.DashboardActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="#424141"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/wallet"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                app:srcCompat="@drawable/ic_baseline_account_balance_wallet_24"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/Balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif"
+                android:text="1036.12"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/BalanceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/balance"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/balanceText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="18dp"
+                android:text="NPR"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#424141"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/wallet1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                app:srcCompat="@drawable/global"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/wallet2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                app:srcCompat="@drawable/sunrise"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/Balance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="Direct Load"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/balanceText"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:singleLine="false"
+                android:text="Global IME Bank Ltd."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/balanceText4"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="100dp"
+                android:singleLine="false"
+                android:text="Sunrise Bank Ltd."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wallet5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                app:srcCompat="@drawable/citizens"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/balanceText7"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="210dp"
+                android:singleLine="false"
+                android:text="Citizens Bank Intl. Ltd."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wallet6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                app:srcCompat="@drawable/siddhartha"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/balanceText8"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="210dp"
+                android:singleLine="false"
+                android:text="Siddhartha Bank Ltd."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wallet3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                app:srcCompat="@drawable/everest"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/wallet4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                app:srcCompat="@drawable/mega"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/balanceText6"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="100dp"
+                android:singleLine="false"
+                android:text="Everest Bank Ltd."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/balanceText5"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="210dp"
+                android:singleLine="false"
+                android:text="Mega Bank Ltd."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wallet7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="280dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                app:srcCompat="@drawable/century"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/balanceText9"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="320dp"
+                android:singleLine="false"
+                android:text="Civil Bank Ltd."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wallet8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="280dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                app:srcCompat="@drawable/civil"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/balanceText10"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="320dp"
+                android:singleLine="false"
+                android:text="Century Commercial Bank Ltd."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wallet9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="280dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                app:srcCompat="@drawable/nepal"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/balanceText11"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="320dp"
+                android:singleLine="false"
+                android:text="Nepal Bank Ltd."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wallet10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/rastriya"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/balanceText12"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="440dp"
+                android:layout_marginBottom="32dp"
+                android:singleLine="false"
+                android:text="Rastriya Banijya Bank Ltd."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wallet11"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/nic"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/balanceText13"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="440dp"
+                android:singleLine="false"
+                android:text="NIC Asia Bank Ltd."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wallet12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/todo"
+                android:padding="2dp"
+                app:srcCompat="@drawable/agricultural"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/balanceText14"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="440dp"
+                android:singleLine="false"
+                android:text="Agricultural Development Bank Ltd."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="Mobile Banking"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_anchorGravity="start|center" />
+
+    <ImageView
+        android:id="@+id/loadBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        app:layout_anchor="@+id/appbar"
+        app:layout_anchorGravity="end|center"
+        app:srcCompat="@drawable/ic_baseline_search_24" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
