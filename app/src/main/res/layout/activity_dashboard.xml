@@ -126,7 +126,7 @@
                 android:textColor="@color/white" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/sendMoneyBtn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="250dp"

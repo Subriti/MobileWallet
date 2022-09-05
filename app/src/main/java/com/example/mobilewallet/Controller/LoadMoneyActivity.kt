@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
-import android.widget.Toast
 import com.example.mobilewallet.R
 
 class LoadMoneyActivity : AppCompatActivity() {
@@ -17,17 +16,17 @@ class LoadMoneyActivity : AppCompatActivity() {
         loadback.setOnClickListener {
             startActivity(Intent(this@LoadMoneyActivity,DashboardActivity::class.java))
         }
-        val mobile= findViewById<View>(R.id.mobileBanking)
+        val mobile= findViewById<View>(R.id.Bank)
         mobile.setOnClickListener {
             //Toast.makeText(this,"Clicked on Mobile Banking", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this, MobileBankingActivity::class.java))
         }
-        val internet= findViewById<View>(R.id.internetBanking)
+        val internet= findViewById<View>(R.id.WalletUsers)
         internet.setOnClickListener {
             //Toast.makeText(this,"Clicked on Internet Banking", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this, InternetBankingActivity::class.java))
         }
-        val card= findViewById<View>(R.id.cardBanking)
+        val card= findViewById<View>(R.id.Corp)
         card.setOnClickListener {
             //Toast.makeText(this,"Clicked on Card Banking", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this, CardLoadingActivity::class.java))

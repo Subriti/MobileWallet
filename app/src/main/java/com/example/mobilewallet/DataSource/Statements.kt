@@ -8,13 +8,13 @@ import java.time.format.DateTimeFormatter
 
 class Statements {
     @RequiresApi(Build.VERSION_CODES.O)
-    val current = LocalDateTime.now()
+    val current: LocalDateTime = LocalDateTime.now()
     @RequiresApi(Build.VERSION_CODES.O)
-    val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
+    val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
     @RequiresApi(Build.VERSION_CODES.O)
-    val formatted = current.format(formatter)
-    @RequiresApi(Build.VERSION_CODES.O)
+    val formatted: String = current.format(formatter)
 
+    @RequiresApi(Build.VERSION_CODES.O)
     fun loadTransactions(): List<Transactions> {
         return listOf<Transactions>(
             Transactions("Topup for NTC -9843346520",formatted,100,"Balance: 1036.12"),

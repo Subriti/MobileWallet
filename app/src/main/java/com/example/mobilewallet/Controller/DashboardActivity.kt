@@ -37,5 +37,11 @@ class DashboardActivity : AppCompatActivity() {
             val intent = Intent(this, LoadMoneyActivity::class.java)
             startActivity(intent)
         }
+
+        val sendmoney= findViewById<ImageView>(R.id.sendMoneyBtn)
+        sendmoney.setOnClickListener{
+            val intent = Intent(this, SendMoneyActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
